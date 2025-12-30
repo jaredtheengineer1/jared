@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,64758,a=>{"use strict";var s=a.i(43476);a.s(["CaseStudyNav",0,()=>(0,s.jsx)("nav",{className:"case-study-nav","aria-label":"Case study navigation",children:(0,s.jsx)("a",{href:"/case-studies",className:"back-link",children:"← Back to Case Studies"})})])}]);
