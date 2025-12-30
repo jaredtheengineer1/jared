@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "predeploy": "cross-env GITHUB_PAGES=true npm run build && cross-env GITHUB_PAGES=true npm run export",
+    "predeploy": "cross-env GITHUB_PAGES=true npm run build",
     "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "eslint"
