@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
+    "predeploy": "cross-env GITHUB_PAGES=true npm run build && cross-env GITHUB_PAGES=true npm run export",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "eslint"
   },
@@ -17,8 +20,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
+    "gh-pages": "^5.0.0",
     "typescript": "^5"
   }
 }

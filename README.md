@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## License
 
-## Getting Started
+The source code for this site is licensed under the MIT License.
 
-First, run the development server:
+All written content, case studies, and personal materials are © Jared Clayborn.
+All rights reserved unless otherwise noted.
+
+## GitHub Pages / Static Export
+
+This project is configured to support a static export and deployment to GitHub Pages.
+
+- Local convenience scripts are available in `package.json`:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Build + export for GitHub Pages (sets GITHUB_PAGES=true so basePath is applied)
+npm run predeploy
+# Publish `out` to the `gh-pages` branch
+npm run deploy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- The workflow that runs on push to `main` is at [.github/workflows/deploy-gh-pages.yml](.github/workflows/deploy-gh-pages.yml). It builds, runs `next export`, and publishes the `out` folder to the `gh-pages` branch.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `next.config.js` will set `basePath` and `assetPrefix` automatically when `GITHUB_PAGES=true` is present during the build. See [next.config.js](next.config.js).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Local static preview**
 
-## Learn More
+After running `npm run build` and `npm run export` you can preview the exported site:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npx http-server out -p 3000
+# then open http://localhost:3000
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Public assets**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Place static files (images, PDFs) in the `public` folder so they are available in the exported site. For example, the Contact page expects the resume at:
 
-## Deploy on Vercel
+```
+public/Jared_Clayborn_Senior_Software_Engineer.pdf
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Notes & compatibility**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The app uses the App Router (`app/`). Static export requires pages/components to avoid server-only features or dynamic server rendering. Ensure features you rely on are supported by `next export`.
+- Route folder names map directly to URLs. Use lowercase and hyphens for predictable paths (for example, `app/case-studies` → `/case-studies`).
+- Navigation active state uses `usePathname` from `next/navigation`; style the `.active` class in `app/globals.css`.
+
+If you'd like, I can add a placeholder PDF to `public` for testing, add a deploy badge, or run a local export and preview for you.
