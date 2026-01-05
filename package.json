@@ -5,8 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "predeploy": "cross-env GITHUB_PAGES=true npm run build",
-    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "eslint"
   },
