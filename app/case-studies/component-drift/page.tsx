@@ -58,7 +58,7 @@ export default function ComponentDrift() {
           that clearly separated:
           <ul>
             <li>Structure from presentation</li>
-            <li>Shared behavior from page-sepcific configuration</li>
+            <li>Shared behavior from page-specific configuration</li>
           </ul>
         </p>
         <p>
@@ -74,7 +74,7 @@ export default function ComponentDrift() {
           <ul>
             <li>Composition over configuration</li>
             <li>Focused components over highly configurable ones</li>
-            <li>"Correct" should be the easiest path</li>
+            <li>&ldquo;Correct&rdquo; should be the easiest path</li>
           </ul>
         </p>
         <p>

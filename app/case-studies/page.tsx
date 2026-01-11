@@ -18,8 +18,9 @@ export default function CaseStudies() {
             </Link>
           </h2>
           <p>
-            A growing frontend codebase had accumulated subtle component
-            divergence...
+            Subtle component divergence emerged as a growing frontend evolved. I
+            reduced drift by identifying shared intent and introducing
+            composable components that made consistency the default.
           </p>
         </div>
       </section>
@@ -47,8 +48,24 @@ export default function CaseStudies() {
             </Link>
           </h2>
           <p>
-            Rendering large datasets introduced noticeable performance and
-            interaction lag.
+            Rendering large datasets caused noticeable performance and
+            interaction lag. I improved responsiveness by virtualizing table
+            rendering and reducing unnecessary work.
+          </p>
+        </div>
+      </section>
+      <section className="case-study-section">
+        <div className="case-study-preview">
+          <CaseStudyLabel />
+          <h2>
+            <Link href="/case-studies/legacy-test-coverage">
+              Restoring Confidence in a Legacy System with Incremental Test
+              Coverage
+            </Link>
+          </h2>
+          <p>
+            Restored confidence in a critical legacy system through incremental
+            test coverage, enabling safe change without a rewrite.
           </p>
         </div>
       </section>

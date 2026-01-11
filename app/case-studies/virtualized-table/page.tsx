@@ -79,7 +79,7 @@ export default function VirtualizedTable() {
             </li>
             <li>
               Row components were kept deliberately minimal to reduce layout and
-              paint cos
+              paint costs.
             </li>
           </ul>
         </p>
