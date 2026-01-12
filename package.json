@@ -12,7 +12,7 @@
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "jaredsdesignsystem": "git+ssh://git@github.com/jaredtheengineer1/jaredsDesignSystem.git#v1.0.5"
+    "jaredsdesignsystem": "https://github.com/jaredtheengineer1/jaredsDesignSystem.git#v1.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
