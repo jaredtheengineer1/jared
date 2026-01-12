@@ -7,7 +7,7 @@ export default function DesignSystem() {
       <section className="intro">
         <h1>Design Tokens / CSS Package</h1>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Context</h2>
         <p>
           While our component library addresses UI consistency within a single
@@ -22,7 +22,7 @@ export default function DesignSystem() {
           semantic intent, and component-level usage.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Problem</h2>
         <p>
           Design discussions are becoming ambiguous and inefficient. Terms like
@@ -35,7 +35,7 @@ export default function DesignSystem() {
           risk of subtle inconsistencies being introduced as systems evolve.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Decision</h2>
         <p>
           Rather than continuing to resolve these ambiguities on a case-by-case
@@ -49,7 +49,7 @@ export default function DesignSystem() {
           projects, while still leaving room for evolution.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Execution</h2>
         <p>
           We create a CSS package structured around three layers:
@@ -78,7 +78,7 @@ export default function DesignSystem() {
           radius, while preserving a shared language across teams and codebases.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Impact</h2>
         <p>
           As a result, teams are able to discuss design decisions using a common
@@ -87,7 +87,7 @@ export default function DesignSystem() {
           in each new context.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Reflection</h2>
         <p>
           This approach requires more upfront coordination, but it significantly

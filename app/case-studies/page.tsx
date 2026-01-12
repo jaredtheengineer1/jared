@@ -9,7 +9,7 @@ export default function CaseStudies() {
       <section className="intro">
         <h1>Case Studies</h1>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <div className="case-study-preview">
           <CaseStudyLabel />
           <h2>
@@ -24,7 +24,7 @@ export default function CaseStudies() {
           </p>
         </div>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <div className="case-study-preview">
           <CaseStudyLabel />
           <h2>
@@ -39,7 +39,7 @@ export default function CaseStudies() {
           </p>
         </div>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <div className="case-study-preview">
           <CaseStudyLabel />
           <h2>
@@ -54,7 +54,7 @@ export default function CaseStudies() {
           </p>
         </div>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <div className="case-study-preview">
           <CaseStudyLabel />
           <h2>

@@ -7,7 +7,7 @@ export default function ComponentDrift() {
       <section className="intro">
         <h1>Reducing Component Drift Across Pages</h1>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Problem</h2>
         <p>
           Over time, due to reasonable decisions made in isolation, components
@@ -22,7 +22,7 @@ export default function ComponentDrift() {
           harder to maintain and less predictable for users.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Why This Was Hard</h2>
         <p>
           This wasn’t a single bug or broken feature — it was a systems problem.
@@ -39,7 +39,7 @@ export default function ComponentDrift() {
           happening, and how to fix it in a way that would hold up over time.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Decision</h2>
         <p>
           I approached the problem by focusing on shared intent, not just shared
@@ -67,7 +67,7 @@ export default function ComponentDrift() {
           consistency without blocking legitimate variation.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Execution</h2>
         <p>
           A few guiding principles shaped the solution:
@@ -82,7 +82,7 @@ export default function ComponentDrift() {
           reuse, and reduced the likelihood of new drift being introduced.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Impact</h2>
         <p>
           Pages across the application felt more cohesive and predictable.

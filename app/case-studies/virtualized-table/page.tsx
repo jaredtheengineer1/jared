@@ -7,7 +7,7 @@ export default function VirtualizedTable() {
       <section className="intro">
         <h1>Increasing performance on Large Data Tables</h1>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Problem</h2>
         <p>
           As data volume increased, table performance degraded noticeably. Once
@@ -21,7 +21,7 @@ export default function VirtualizedTable() {
           application feel slower, increasing frustration and abandonment.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Why This Was Hard</h2>
         <p>
           Tables are deceptively expensive UI components. Each row brings
@@ -34,7 +34,7 @@ export default function VirtualizedTable() {
           performance improvement had to preserve usability, not trade it away.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Decision</h2>
         <p>
           To support large datasets without degrading perceived performance,
@@ -47,7 +47,7 @@ export default function VirtualizedTable() {
           loaded.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Approach</h2>
         <p>
           Rather than optimizing individual bottlenecks in the existing table, I
@@ -88,7 +88,7 @@ export default function VirtualizedTable() {
           smooth scrolling experience.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Result</h2>
         <p>
           Table interactions remained fast and predictable even with large

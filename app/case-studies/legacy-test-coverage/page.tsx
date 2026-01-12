@@ -9,7 +9,7 @@ export default function LegacyTesting() {
           Restoring Confidence in a Legacy System with Incremental Test Coverage
         </h1>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Context</h2>
         <p>
           This case study focuses on a legacy frontend application that remains
@@ -32,7 +32,7 @@ export default function LegacyTesting() {
           the ecosystem.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>The Problem</h2>
         <p>
           Despite being business-critical, this system had no meaningful test
@@ -60,7 +60,7 @@ export default function LegacyTesting() {
           increasingly functioned as a black box.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2> Constraints</h2>
         <p>A full rewrite was not viable.</p>
         <ul>
@@ -77,7 +77,7 @@ export default function LegacyTesting() {
           core customer-facing product.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Strategy: Incremental Test Coverage as Risk Reduction</h2>
         <p>
           At the start of this effort, the test suite consisted of a single file
@@ -108,7 +108,7 @@ export default function LegacyTesting() {
           opaque behavior explicit.
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Outcome</h2>
         <p>
           This approach transformed how the team interacted with the legacy
@@ -133,7 +133,7 @@ export default function LegacyTesting() {
           how the application actually behaves
         </p>
       </section>
-      <section className="case-study-section">
+      <section className="preview-section">
         <h2>Reflection</h2>
         <p>
           Legacy systems don&apos;t fail because they are old -- they fail when
