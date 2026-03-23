@@ -221,3 +221,10 @@ a:visited:not(.nav-link) {
 .not-a-thing {
   color: red;
 }
+
+.presentation-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
