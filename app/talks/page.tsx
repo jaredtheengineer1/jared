@@ -13,15 +13,7 @@ export const TalksPage = () => {
       <section className="preview-section">
         <div className="case-study-preview">
           <PresentationLabel />
-          <h2>
-            <a
-              href="/design-token-architecture-script.pdf"
-              rel="noopener noreferrer"
-              download
-            >
-              Design Token Architecture
-            </a>
-          </h2>
+          <h2>Design Token Architecture</h2>
           <div className="presentation-links">
             <a
               href="/design-token-architecture-outline.pdf"
@@ -50,15 +42,7 @@ export const TalksPage = () => {
       <section className="preview-section">
         <div className="case-study-preview">
           <PresentationLabel />
-          <h2>
-            <a
-              href="/storybook-as-contract-script.pdf"
-              rel="noopener noreferrer"
-              download
-            >
-              Storybook as your Component Contract
-            </a>
-          </h2>
+          <h2>Storybook as your Component Contract</h2>
           <div className="presentation-links">
             <a
               href="/storybook-as-contract-outline.pdf"
@@ -83,6 +67,29 @@ export const TalksPage = () => {
             testing—eliminating drift and building trust in your design system.
           </p>
         </div>
+      </section>
+      <section className="preview-section">
+        <div className="case-study-preview">
+          <PresentationLabel />
+          <h2>The Messy Road to a Design System - Tales from the Trenches</h2>
+          {/* <a href="/messy-road-outline.pdf" rel="noopener noreferrer" download>
+            Talk Outline
+          </a>
+          <a href="/messy-road-slides.pdf" rel="noopener noreferrer" download>
+            Talk Slides
+          </a> */}
+        </div>
+        <p>
+          A candid, real-world exploration of building a design system from
+          legacy artifacts, distributed applications, and incomplete
+          documentation. This talk walks through the messy journey of
+          standardizing colors, migrating themes, modernizing primitives with
+          OKLCH, overcoming tooling gaps, and enforcing consistency across
+          multiple apps and teams. Attendees will see how iterative improvements
+          uncover new challenges, learn strategies for aligning stakeholders,
+          and understand why a design system is always a work in progress—not a
+          finished product.
+        </p>
       </section>
     </main>
   );
