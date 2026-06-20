@@ -1,9 +1,9 @@
-import { CaseStudyNav } from "../../components/Nav/CaseStudyNav";
+import { StoryNav } from "../../components/Nav/StoryNav";
 
 export default function DesignSystem() {
   return (
     <main>
-      <CaseStudyNav />
+      <StoryNav />
       <section className="intro">
         <h1>Design Tokens / CSS Package</h1>
       </section>

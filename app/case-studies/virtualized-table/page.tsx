@@ -1,9 +1,9 @@
-import { CaseStudyNav } from "../../components/Nav/CaseStudyNav";
+import { StoryNav } from "../../components/Nav/StoryNav";
 
 export default function VirtualizedTable() {
   return (
     <main>
-      <CaseStudyNav></CaseStudyNav>
+      <StoryNav></StoryNav>
       <section className="intro">
         <h1>Increasing performance on Large Data Tables</h1>
       </section>

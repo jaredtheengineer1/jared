@@ -1,9 +1,9 @@
-import { CaseStudyNav } from "../../components/Nav/CaseStudyNav";
+import { StoryNav } from "../../components/Nav/StoryNav";
 
 export default function LegacyTesting() {
   return (
     <main>
-      <CaseStudyNav></CaseStudyNav>
+      <StoryNav></StoryNav>
       <section className="intro">
         <h1>
           Restoring Confidence in a Legacy System with Incremental Test Coverage

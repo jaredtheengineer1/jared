@@ -1,8 +1,5 @@
 import Link from "next/link";
-
-const CaseStudyLabel = () => {
-  return <span className="case-study-label">Case Study</span>;
-};
+import { Label as CaseStudyLabel } from "@/app/components/Label/Label";
 export default function CaseStudies() {
   return (
     <main>
@@ -11,7 +8,7 @@ export default function CaseStudies() {
       </section>
       <section className="preview-section">
         <div className="case-study-preview">
-          <CaseStudyLabel />
+          <CaseStudyLabel>Case Study</CaseStudyLabel>
           <h2>
             <Link href="/case-studies/component-drift">
               Component Drift in a Growing Frontend
@@ -26,7 +23,7 @@ export default function CaseStudies() {
       </section>
       <section className="preview-section">
         <div className="case-study-preview">
-          <CaseStudyLabel />
+          <CaseStudyLabel>Case Study</CaseStudyLabel>
           <h2>
             <Link href="/case-studies/design-system">
               Scaling Frontend Development with a Design System
@@ -41,7 +38,7 @@ export default function CaseStudies() {
       </section>
       <section className="preview-section">
         <div className="case-study-preview">
-          <CaseStudyLabel />
+          <CaseStudyLabel>Case Study</CaseStudyLabel>
           <h2>
             <Link href="/case-studies/virtualized-table">
               Scaling Performance for Large Data Tables
@@ -56,7 +53,7 @@ export default function CaseStudies() {
       </section>
       <section className="preview-section">
         <div className="case-study-preview">
-          <CaseStudyLabel />
+          <CaseStudyLabel>Case Study</CaseStudyLabel>
           <h2>
             <Link href="/case-studies/legacy-test-coverage">
               Restoring Confidence in a Legacy System with Incremental Test

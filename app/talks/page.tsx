@@ -1,8 +1,5 @@
 import Link from "next/link";
-
-const PresentationLabel = () => {
-  return <span className="case-study-label">Presentation</span>;
-};
+import { Label as PresentationLabel } from "@/app/components/Label/Label";
 
 export const TalksPage = () => {
   return (
@@ -12,7 +9,7 @@ export const TalksPage = () => {
       </section>
       <section className="preview-section">
         <div className="case-study-preview">
-          <PresentationLabel />
+          <PresentationLabel>Presentations</PresentationLabel>
           <h2>Design Token Architecture</h2>
           <div className="presentation-links">
             <a
@@ -41,7 +38,7 @@ export const TalksPage = () => {
       </section>
       <section className="preview-section">
         <div className="case-study-preview">
-          <PresentationLabel />
+          <PresentationLabel>Presentations</PresentationLabel>
           <h2>Storybook as your Component Contract</h2>
           <div className="presentation-links">
             <a
@@ -70,7 +67,7 @@ export const TalksPage = () => {
       </section>
       <section className="preview-section">
         <div className="case-study-preview">
-          <PresentationLabel />
+          <PresentationLabel>Presentations</PresentationLabel>
           <h2>The Messy Road to a Design System - Tales from the Trenches</h2>
           {/* <a href="/messy-road-outline.pdf" rel="noopener noreferrer" download>
             Talk Outline

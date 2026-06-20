@@ -31,6 +31,9 @@ export const Nav = () => {
           </Link>
         </li>
         <li>
+            <Link href="/engineering-stories" className={`nav-link ${isActive('/engineering-stories') ? 'active': ''}`}>Engineering Stories</Link>
+        </li>
+        <li>
           <Link
             href="/contact"
             className={`nav-link ${isActive("/contact") ? "active" : ""}`}

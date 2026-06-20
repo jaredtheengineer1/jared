@@ -1,9 +1,9 @@
-import { CaseStudyNav } from "../../components/Nav/CaseStudyNav";
+import { StoryNav } from "../../components/Nav/StoryNav";
 
 export default function ComponentDrift() {
   return (
     <main>
-      <CaseStudyNav />
+      <StoryNav backTo="/case-studies" backText="Case Studies" />
       <section className="intro">
         <h1>Reducing Component Drift Across Pages</h1>
       </section>
