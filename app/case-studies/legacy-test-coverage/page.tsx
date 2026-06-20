@@ -3,7 +3,7 @@ import { StoryNav } from "../../components/Nav/StoryNav";
 export default function LegacyTesting() {
   return (
     <main>
-      <StoryNav></StoryNav>
+      <StoryNav backTo="/case-studies" backText="Case Studies" />
       <section className="intro">
         <h1>
           Restoring Confidence in a Legacy System with Incremental Test Coverage

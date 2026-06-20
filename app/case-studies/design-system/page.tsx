@@ -3,7 +3,7 @@ import { StoryNav } from "../../components/Nav/StoryNav";
 export default function DesignSystem() {
   return (
     <main>
-      <StoryNav />
+      <StoryNav backTo="/case-studies" backText="Case Studies" />
       <section className="intro">
         <h1>Design Tokens / CSS Package</h1>
       </section>

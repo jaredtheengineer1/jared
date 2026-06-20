@@ -3,7 +3,7 @@ import { StoryNav } from "../../components/Nav/StoryNav";
 export default function VirtualizedTable() {
   return (
     <main>
-      <StoryNav></StoryNav>
+      <StoryNav backTo="/case-studies" backText="Case Studies" />
       <section className="intro">
         <h1>Increasing performance on Large Data Tables</h1>
       </section>
