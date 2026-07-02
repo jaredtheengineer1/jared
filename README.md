@@ -1,48 +1,91 @@
+# Jared Clayborn — Engineering Portfolio
+
+A modern portfolio site showcasing case studies, engineering talks, and executable documentation. Built with Next.js, React, and TypeScript for fast, accessible web experiences.
+
+## About
+
+I'm a senior software engineer focused on designing and scaling SaaS and enterprise web applications. My work centers on reliability, maintainability, and long-term impact under real-world constraints.
+
+**Currently:** Frontend engineer at Avero, Inc., working on data visualization, reusable components, and flexible filtering systems that help operators move from high-level insights to actionable details.
+
+**Focus areas:**
+- Data visualization & interactive tables
+- Reusable component systems
+- Architecture that grows without becoming harder to change
+- Unblocking teammates through thoughtful design
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Open http://localhost:3000
+```
+
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) 16+ with App Router
+- **Language:** TypeScript
+- **Styling:** CSS modules + global styles with design tokens
+- **Deployment:** Static export to GitHub Pages
+- **Hosting:** GitHub Pages via automated workflow
+
+## Deployment
+
+### GitHub Pages Static Export
+
+This site builds as a static export for hosting on GitHub Pages.
+
+#### Local Build & Preview
+
+```bash
+# Build and export
+npm run predeploy
+
+# Preview locally
+npx http-server out -p 3000
+# Then open http://localhost:3000
+```
+
+#### Automated Deployment
+
+Push to `main` branch — the GitHub Actions workflow at `.github/workflows/deploy-gh-pages.yml` will:
+1. Build the Next.js app
+2. Run `next export` to generate static files
+3. Publish the `out/` folder to the `gh-pages` branch
+
+#### Configuration
+
+`next.config.js` automatically sets `basePath` and `assetPrefix` when `GITHUB_PAGES=true` is present during build.
+
+### Public Assets
+
+Static files (images, PDFs, downloads) go in the `public/` folder:
+```
+public/
+├── Jared_Clayborn_Senior_Software_Engineer.pdf  # Resume
+├── images/
+└── ...
+```
+
+## Important Notes
+
+- **Static Export Compatibility:** The app uses Next.js App Router with static export. Avoid server-only features (like database queries) in pages/components. All dynamic rendering must be client-side.
+- **Client-Side Cookies:** Cookie access via `document.cookie` requires `'use client'` directive. Use `await cookies()` from `next/headers` only in Server Components.
+- **Lowercase URLs:** Use lowercase and hyphens in folder names for predictable, SEO-friendly paths.
+
 ## License
 
-The source code for this site is licensed under the MIT License.
+- **Source code:** MIT License
+- **Written content, case studies, personal materials:** © Jared Clayborn. All rights reserved unless otherwise noted.
 
-All written content, case studies, and personal materials are © Jared Clayborn.
-All rights reserved unless otherwise noted.
-
-## GitHub Pages / Static Export
-
-This project is configured to support a static export and deployment to GitHub Pages.
-
-- Local convenience scripts are available in `package.json`:
-
-```bash
-# Build + export for GitHub Pages (sets GITHUB_PAGES=true so basePath is applied)
-npm run predeploy
-# Publish `out` to the `gh-pages` branch
-npm run deploy
-```
-
-- The workflow that runs on push to `main` is at [.github/workflows/deploy-gh-pages.yml](.github/workflows/deploy-gh-pages.yml). It builds, runs `next export`, and publishes the `out` folder to the `gh-pages` branch.
-
-- `next.config.js` will set `basePath` and `assetPrefix` automatically when `GITHUB_PAGES=true` is present during the build. See [next.config.js](next.config.js).
-
-**Local static preview**
-
-After running `npm run build` and `npm run export` you can preview the exported site:
-
-```bash
-npx http-server out -p 3000
-# then open http://localhost:3000
-```
-
-**Public assets**
-
-Place static files (images, PDFs) in the `public` folder so they are available in the exported site. For example, the Contact page expects the resume at:
-
-```
-public/Jared_Clayborn_Senior_Software_Engineer.pdf
-```
-
-**Notes & compatibility**
-
-- The app uses the App Router (`app/`). Static export requires pages/components to avoid server-only features or dynamic server rendering. Ensure features you rely on are supported by `next export`.
-- Route folder names map directly to URLs. Use lowercase and hyphens for predictable paths (for example, `app/case-studies` → `/case-studies`).
-- Navigation active state uses `usePathname` from `next/navigation`; style the `.active` class in `app/globals.css`.
-
-If you'd like, I can add a placeholder PDF to `public` for testing, add a deploy badge, or run a local export and preview for you.

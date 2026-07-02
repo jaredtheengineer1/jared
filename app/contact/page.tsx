@@ -6,7 +6,7 @@ export default function Contact() {
       </section>
       <section className="contact-section">
         <p>
-          If you'd like to talk about systems, frontend architecture, or
+          If you&apos;d like to talk about systems, frontend architecture, or
           potential opportunities, you can reach me at:
         </p>
         <ul className="contact-links">

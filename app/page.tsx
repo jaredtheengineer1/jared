@@ -6,13 +6,13 @@ export default function Home() {
       <section className="intro">
         <h1 className="intro-heading">Jared Clayborn</h1>
         <p className="page-intro">
-          Hi, I’m Jared. I design and scale SaaS and enterprise web
+          Hi, I&apos;m Jared. I design and scale SaaS and enterprise web
           applications, with a focus on reliability, maintainability, and
           long-term impact under real-world constraints.
         </p>
       </section>
       <p>
-        I’m currently on the frontend team at Avero, Inc., where I work on
+        I&apos;m currently on the frontend team at Avero, Inc., where I work on
         turning complex POS data into clear, actionable insights for operators.
         My work centers on data visualization, reusable table components, and
         flexible filtering systems that let users move from a high-level
